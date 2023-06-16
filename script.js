@@ -106,9 +106,6 @@ const changeMode = () => {
     }
 }
 
-
-
-
 window.addEventListener("onload", onLaodChangeMode());
 
 const saveNote = () => {
@@ -205,16 +202,16 @@ const loadSearch = (list) => {
 
 }
 
-document.getElementById("search").addEventListener("keydown", (e) => {
+const find = () => {
     // if (document.getElementById("search").value === "") {
     //     console.log("eampty");
     //     loadNotes();
     // } else {
-        let title = document.getElementById("search").value;
-        let list = titleList.filter((ele) => {
-            return ele.toLowerCase().includes(title.toLowerCase());
-        })
-        console.log("list");
-        loadSearch(list);
+    let title = document.getElementById("search").value;
+    let list = titleList.filter((ele) => {
+        return ele.toLowerCase().includes(title.toLowerCase());
+    })
+    console.log("list");
+    loadSearch(list);
     // }
-})
+}

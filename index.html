@@ -30,10 +30,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="d-flex" role="search">
+                    <input class="form-control me-2" id="search" onkeydown="find()" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" onclick="find()">Search</button>
+                </div>
 
                 <a class="toggleMode pe-auto" onclick="changeMode()"></a>
             </div>
